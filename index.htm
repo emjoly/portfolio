@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emily Joly</title>
+    <link rel="stylesheet" href="desktop.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <div id="desktop">
+      <!-- Application Icons -->
+      <div class="icon" ondblclick="openApp('app1', 'app1-icon.png')">
+        <img src="app1-icon.png" alt="App 1" />
+        <p>Jeux</p>
+      </div>
+      <div class="icon" ondblclick="openApp('app2', 'app2-icon.png')">
+        <img src="app2-icon.png" alt="App 2" />
+        <p>A propos de moi</p>
+      </div>
+      <div class="icon" ondblclick="openApp('app3', 'app3-icon.png')">
+        <img src="app3-icon.png" alt="App 3" />
+        <p>Entrer en contact</p>
+      </div>
+      <div class="icon" ondblclick="openApp('app4', 'app4-icon.png')">
+        <img src="app4-icon.png" alt="App 4" />
+        <p>Modeles 3D</p>
+      </div>
+
+      <!-- Popup Applications -->
+      <div class="popup" id="app1">
+        <div class="popup-header">
+          <span>Jeux</span>
+          <div class="popup-controls">
+            <button onclick="minimizeApp('app1', 'app1-icon.png')">-</button>
+            <button onclick="toggleFullscreen('app1')">[ ]</button>
+            <button onclick="closeApp('app1')">X</button>
+          </div>
+        </div>
+        <div class="popup-content">
+          <p>lien github</p>
+        </div>
+      </div>
+
+      <div class="popup" id="app2">
+        <div class="popup-header">
+          <span>A propos de moi</span>
+          <div class="popup-controls">
+            <button onclick="minimizeApp('app2', 'app2-icon.png')">-</button>
+            <button onclick="toggleFullscreen('app2')">[ ]</button>
+            <button onclick="closeApp('app2')">X</button>
+          </div>
+        </div>
+        <div class="popup-content">
+          <p>
+            Bonjour! Je m'appelle Emily et je suis passionee de programmation.
+            Jai decouvert cela avec etonnement puisque je me suis toujours
+            considere comme une personne plus artistique. Cependant, la
+            programmation me permet de mepanouir et de m'exprimer de maniere
+            creative tout en travaillant mon cote logique. Je suis une personne
+            qui voit la vie une etape a la fois et qui aime profiter des petits
+            plaisir du quotidien. Je suis paresseuse mais, par chance, tout
+            autant curieuse et ces 2 traits me permettent de trouver de
+            nouvelles manieres d'innover mes methodes de travail. Dans mon temps
+            libre, jaime m'occuper de mon ordinateur, promener mon chat et
+            sortir de montreal pour faire de la randonnee et du camping.
+            J'espere que vous apprécierez mon site web et a bientot peut etre!
+          </p>
+        </div>
+      </div>
+
+      <div class="popup" id="app3">
+        <div class="popup-header">
+          <span>Entrer en contact</span>
+          <div class="popup-controls">
+            <button onclick="minimizeApp('app3', 'app3-icon.png')">-</button>
+            <button onclick="toggleFullscreen('app3')">[ ]</button>
+            <button onclick="closeApp('app3')">X</button>
+          </div>
+        </div>
+        <div class="popup-content">
+          <ul>
+            <li><p>Téléphone: 438-680-5991</p></li>
+            <li>
+              <p>Email:</p>
+              <a href="mailto:emily.joly22@outlook.com"
+                >emily.joly22@outlook.com</a
+              >
+            </li>
+            <li>
+              <p>LinkedIn:</p>
+              <a href="https://www.linkedin.com/in/emily-joly-09369b268/"
+                >linkedin.com/in/emily-joly/</a
+              >
+            </li>
+            <li>
+              <p>GitHub:</p>
+              <a href="https://github.com/emjoly" target="_blank"
+                >github.com/emjoly</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="popup" id="app4">
+        <div class="popup-header">
+          <span>Modeles 3D</span>
+          <div class="popup-controls">
+            <button onclick="minimizeApp('app4', 'app4-icon.png')">-</button>
+            <button onclick="toggleFullscreen('app4')">[ ]</button>
+            <button onclick="closeApp('app4')">X</button>
+          </div>
+        </div>
+        <div class="popup-content">
+          <a
+            href="https://www.youtube.com/watch?v=bdobpbE50Do&ab_channel=Emj"
+          ></a>
+          <a
+            href="https://www.youtube.com/watch?v=z6VqwBFbBtc&ab_channel=Emj"
+          ></a>
+        </div>
+      </div>
+    </div>
+    <div id="taskbar">
+      <a href="#home"><img src="./images/windows.png" alt="" /></a>
+      <div class="search-container">
+        <input type="text" placeholder="Search" class="search-input" />
+        <span class="material-symbols-outlined search-icon">search</span>
+      </div>
+    </div>
+    <script src="openApp.js"></script>
+  </body>
+</html>

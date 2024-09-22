@@ -1,0 +1,143 @@
+/* normalize */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Desktop background ************************************/
+#desktop {
+  width: 100vw;
+  height: 95vh;
+  background-image: url("./images/back1.jpg");
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 20px;
+  position: relative;
+}
+
+/**************************** Icons ******************************************/
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.icon img {
+  width: 80px;
+  height: 80px;
+}
+
+.icon p {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 14px;
+}
+
+/*********************** fenetre popup ****************************************************/
+.popup {
+  width: 400px;
+  height: 300px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.popup-header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.popup button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* popup fullscreen */
+.popup.fullscreen {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+/* ************************taskbar********************************************** */
+
+#taskbar {
+  width: 100vw;
+  background-color: #146dd9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  overflow-x: auto;
+}
+#taskbar .task {
+  margin: 0 10px;
+  white-space: nowrap;
+}
+
+#taskbar .task:hover {
+  background-color: #ffffff32;
+}
+img {
+  max-width: 30px;
+}
+a {
+  float: left;
+  display: block;
+  color: black;
+  padding: 8px;
+}
+a:hover {
+  background-color: #ffffff32;
+}
+button i {
+  font-size: 18px;
+}
+
+/* Search Container */
+.search-container {
+  position: relative;
+}
+
+.search-input {
+  padding-left: 30px;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #888;
+  pointer-events: none;
+}
