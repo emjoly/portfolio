@@ -9,8 +9,9 @@
 #desktop {
   width: 100vw;
   height: 95vh;
-  background-image: url("./images/back1.jpg");
+  background-image: url("./images/bliss2.jpg");
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -31,10 +32,11 @@
 .icon img {
   width: 80px;
   height: 80px;
+  object-fit: contain;
 }
 
 .icon p {
-  margin-top: 10px;
+  margin-top: 0px;
   color: #fff;
   font-size: 14px;
 }
@@ -66,9 +68,7 @@
 .popup-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .popup button {
   background: none;
