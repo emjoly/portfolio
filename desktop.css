@@ -71,8 +71,7 @@
   flex-wrap: nowrap;
 }
 .popup button {
-  background: none;
-  border: none;
+
   font-size: 16px;
   cursor: pointer;
 }
@@ -108,7 +107,7 @@
 img {
   max-width: 30px;
 }
-a {
+button.start {
   display: inline-block;
   color: rgb(255, 255, 255);
   padding: 8px;
@@ -161,10 +160,10 @@ a {
   box-shadow: none;
 } */
 }
-a:hover {
+button.start:hover {
   background-color: #1f9b1485;
 }
-button i {
+button.start i {
   font-size: 18px;
 }
 .task {
