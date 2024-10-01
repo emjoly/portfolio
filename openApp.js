@@ -1,46 +1,45 @@
-// Function to open an app
+// ouvrir app
 function openApp(appId, appIcon) {
   var app = document.getElementById(appId);
   app.style.display = "flex";
   addTaskbarApp(appId, appIcon);
 }
 
-// Function to close an app
+// fermer app
 function closeApp(appId) {
   var app = document.getElementById(appId);
   app.style.display = "none";
-  removeTaskbarApp(appId); // Remove from taskbar when the app is closed
+  removeTaskbarApp(appId); // enelever du taskbar
 }
 
-// Function to minimize an app (adds to taskbar)
+// minimiser app + ajouter au taskbar
 function minimizeApp(appId, appIcon) {
   var app = document.getElementById(appId);
-  app.style.display = "none"; // Minimize the app
-  // Do not remove taskbar icon when minimized
+  app.style.display = "none";
 }
 
-// Function to toggle fullscreen
+// toggle fullscreen
 function toggleFullscreen(appId) {
   var app = document.getElementById(appId);
   app.classList.toggle("fullscreen");
 }
 
-// Function to add minimized app (with icon) to taskbar
+// ajout du minimized app au taskbar
 function addTaskbarApp(appId, appIcon) {
-  var taskbar = document.getElementById("taskbar");
+  var taskbar = document.getElementById("taskbar-apps");
 
-  // Check if app is already in taskbar
+  // si app dans taskbar
   if (!document.getElementById("task-" + appId)) {
     var task = document.createElement("div");
     task.className = "task";
     task.id = "task-" + appId;
 
-    // Add app icon to task
+    // ajouter icon
     var icon = document.createElement("img");
     icon.src = appIcon;
     task.appendChild(icon);
 
-    // Click event to restore minimized app
+    // Click pour restorer app
     task.onclick = function () {
       restoreApp(appId);
     };
@@ -49,17 +48,28 @@ function addTaskbarApp(appId, appIcon) {
   }
 }
 
-// Function to remove app from taskbar when closed
+// enlever app du taskbar quand on ferme
 function removeTaskbarApp(appId) {
   var task = document.getElementById("task-" + appId);
   if (task) {
-    task.remove(); // Remove from taskbar when app is closed
+    task.remove();
   }
 }
 
-// Function to restore a minimized app from taskbar
+// restorer app du taskbar
 function restoreApp(appId) {
   var app = document.getElementById(appId);
-  app.style.display = "flex"; // Restore the app
-  // Keep the taskbar icon until the app is closed
+  app.style.display = "flex";
 }
+
+// update time
+function updateTime() {
+  const timeElement = document.getElementById("taskbar-time");
+  const now = new Date();
+  const hours = now.getHours().toString().padStart(2, "0");
+  const minutes = now.getMinutes().toString().padStart(2, "0");
+  timeElement.textContent = `${hours}:${minutes}`;
+}
+
+setInterval(updateTime, 1000);
+updateTime();
