@@ -17,20 +17,20 @@
         <img src="./images/folder-i.ico" alt="App 1" />
         <p>Jeux</p>
       </div>
-      <div class="icon" ondblclick="openApp('app2', 'app2-icon.png')">
-        <img src="app2-icon.png" alt="App 2" />
+      <div class="icon" ondblclick="openApp('app2', './images/text.ico')">
+        <img src="./images/text.ico" alt="App 2" />
         <p>A propos de moi</p>
       </div>
-      <div class="icon" ondblclick="openApp('app3', 'app3-icon.png')">
-        <img src="app3-icon.png" alt="App 3" />
+      <div class="icon" ondblclick="openApp('app3', './images/text.ico')">
+        <img src="./images/text.ico" alt="App 3" />
         <p>Entrer en contact</p>
       </div>
-      <div class="icon" ondblclick="openApp('app4', 'app4-icon.png')">
-        <img src="app4-icon.png" alt="App 4" />
+      <div class="icon" ondblclick="openApp('app4', './images/folder-v.ico')">
+        <img src="./images/folder-v.ico" alt="App 4" />
         <p>Modeles 3D</p>
       </div>
-      <div class="icon" ondblclick="openApp('app5', 'app5-icon.png')">
-        <img src="app5-icon.png" alt="App 5" />
+      <div class="icon" ondblclick="openApp('app5', './images/folder-d.ico')">
+        <img src="./images/folder-d.ico" alt="App 5" />
         <p>Sites web</p>
       </div>
     </div>
@@ -44,7 +44,7 @@
             -
           </button>
           <button onclick="toggleFullscreen('app1')">[ ]</button>
-          <button onclick="closeApp('app1')">X</button>
+          <button class="ferme" onclick="closeApp('app1')">X</button>
         </div>
       </div>
       <div class="popup-content">
@@ -53,6 +53,7 @@
             >Serveur multijoueur</a
           >exécutable dans le read me
         </p>
+        <p><a href="">Vengeance et Vertu</a>Jeu de plateforme 2D en équipe de 4. J'étais responsable de l'intégration multimédia dans Unity.</p>
       </div>
     </div>
 
@@ -60,22 +61,22 @@
       <div class="popup-header">
         <span>A propos de moi</span>
         <div class="popup-controls">
-          <button onclick="minimizeApp('app2', 'app2-icon.png')">-</button>
+          <button onclick="minimizeApp('app2', './images/text.ico')">-</button>
           <button onclick="toggleFullscreen('app2')">[ ]</button>
-          <button onclick="closeApp('app2')">X</button>
+          <button class="ferme" onclick="closeApp('app2')">X</button>
         </div>
       </div>
       <div class="popup-content">
         <p>
           Bonjour! Je m'appelle Emily et je suis passionee de programmation. Jai
           decouvert cela avec etonnement puisque je me suis toujours considere
-          comme une personne plus artistique. Cependant, la programmation me
+          comme une personne plus artistique. <img src="" alt="moi">Cependant, la programmation me
           permet de mepanouir et de m'exprimer de maniere creative tout en
           travaillant mon cote logique. Je suis une personne qui voit la vie une
           etape a la fois et qui aime profiter des petits plaisir du quotidien.
           Je suis paresseuse mais, par chance, tout autant curieuse et ces 2
           traits me permettent de trouver de nouvelles manieres d'innover mes
-          methodes de travail. Dans mon temps libre, jaime m'occuper de mon
+          methodes de travail. <img src="" alt="mon chat, tupperware">Dans mon temps libre, jaime m'occuper de mon
           ordinateur, promener mon chat et sortir de montreal pour faire de la
           randonnee et du camping. J'espere que vous apprécierez mon site web et
           a bientot peut etre!
@@ -87,9 +88,9 @@
       <div class="popup-header">
         <span>Entrer en contact</span>
         <div class="popup-controls">
-          <button onclick="minimizeApp('app3', 'app3-icon.png')">-</button>
+          <button onclick="minimizeApp('app3', './images/text.ico')">-</button>
           <button onclick="toggleFullscreen('app3')">[ ]</button>
-          <button onclick="closeApp('app3')">X</button>
+          <button class="ferme" onclick="closeApp('app3')">X</button>
         </div>
       </div>
       <div class="popup-content">
@@ -121,9 +122,9 @@
       <div class="popup-header">
         <span>Modeles 3D</span>
         <div class="popup-controls">
-          <button onclick="minimizeApp('app4', 'app4-icon.png')">-</button>
+          <button onclick="minimizeApp('app4', './images/folder-v.ico')">-</button>
           <button onclick="toggleFullscreen('app4')">[ ]</button>
-          <button onclick="closeApp('app4')">X</button>
+          <button class="ferme" onclick="closeApp('app4')">X</button>
         </div>
       </div>
       <div class="popup-content">
@@ -142,13 +143,14 @@
       <div class="popup-header">
         <span>Sites web</span>
         <div class="popup-controls">
-          <button onclick="minimizeApp('app5', 'app5-icon.png')">-</button>
+          <button onclick="minimizeApp('app5', './images/folder-d.ico')">-</button>
           <button onclick="toggleFullscreen('app5')">[ ]</button>
-          <button onclick="closeApp('app5')">X</button>
+          <button class="ferme" onclick="closeApp('app5')">X</button>
         </div>
       </div>
       <div class="popup-content">
-        <p>meow</p>
+        <p><a href="https://5w5-2024-gr2-equipe5.github.io/projet_web_A2024/">Technique d'intégration multimédia</a>Ce site se servira de wordpress et de 2 plugins. Dans ce projet en équipe de 5, j'occupe le role de responsable de la programmation. Mes contributions précises sont indiquées par les commits dans ma branche.</p>
+        <p><a href="">Bande dessinées</a>Travail d'équipe à 2 en utilisant la base de donnée firebase et déployé avec firebase.</p>
       </div>
     </div>
 
