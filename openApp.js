@@ -73,3 +73,26 @@ function updateTime() {
 
 setInterval(updateTime, 1000);
 updateTime();
+
+// carrousel pour projets !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+function prochaine(direction, btn) {
+  const carousel = btn.parentElement.querySelector(".carousel-inner");
+  const images = carousel.querySelectorAll("img");
+  let currentIndex;
+
+  // trouver img active
+  images.forEach((img, index) => {
+    if (img.classList.contains("active")) {
+      currentIndex = index;
+    }
+  });
+
+  // enlever classe active
+  images[currentIndex].classList.remove("active");
+
+  // calculer prochaine img
+  const nextIndex = (currentIndex + direction + images.length) % images.length;
+
+  // ajouter classe active
+  images[nextIndex].classList.add("active");
+}

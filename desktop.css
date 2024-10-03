@@ -99,9 +99,58 @@
   background-color: #fff;
   overflow-y: auto;
   flex-grow: 1;
-  border-radius: 3%;
+  border-radius: 1%;
 }
 
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.carousel-inner {
+  display: flex;
+}
+
+.carousel img {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.carousel img.active {
+  display: block;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.popup iframe {
+  width: 100%;
+  height: calc(700px * 9 / 16);
+}
+
+.projet2 {
+  padding-top: 10%;
+}
 /* popup fullscreen */
 .popup.fullscreen {
   width: 100vw;
