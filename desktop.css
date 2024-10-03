@@ -14,6 +14,7 @@
   background-size: cover;
   background-position: center;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: flex-start;
   padding: 20px;
@@ -28,6 +29,7 @@
   margin: 20px;
   cursor: pointer;
   text-align: center;
+  width: 100px;
 }
 
 .icon img {
@@ -45,15 +47,16 @@
 
 /*********************** fenetre popup ****************************************************/
 .popup {
-  width: 400px;
-  height: 300px;
+  width: 50vw;
+  height: 50vh;
   background-color: #ece9d8;
   border: 2px solid #a0a0a0;
   position: absolute;
-  top: 50px;
-  left: 100px;
+  top: 25%;
+  left: 25%;
   display: none;
   flex-direction: column;
+  border-radius: 1%;
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
   z-index: 10;
 }
@@ -61,7 +64,7 @@
 .popup-header {
   background-color: #0063b1;
   color: #fff;
-  padding: 10px;
+  padding: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -69,14 +72,26 @@
   font-size: 14px;
   font-weight: bold;
 }
+
+.img1 {
+  width: 150px;
+  float: left;
+}
+
+.img2 {
+  width: 150px;
+  float: right;
+}
 .popup-header button {
   background-color: transparent;
   color: white;
   cursor: pointer;
   font-size: 16px;
   border-radius: 30%;
+  width: 25px;
+  height: 25px;
 }
-.ferme{
+.ferme {
   background-color: red !important;
 }
 .popup-content {
@@ -84,6 +99,7 @@
   background-color: #fff;
   overflow-y: auto;
   flex-grow: 1;
+  border-radius: 3%;
 }
 
 /* popup fullscreen */

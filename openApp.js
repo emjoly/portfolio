@@ -62,7 +62,7 @@ function restoreApp(appId) {
   app.style.display = "flex";
 }
 
-// update time
+// update time!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 function updateTime() {
   const timeElement = document.getElementById("taskbar-time");
   const now = new Date();
