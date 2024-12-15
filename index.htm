@@ -13,9 +13,17 @@
   <body>
     <div id="desktop">
       <!-- Application Icons -->
+      <div class="icon" ondblclick="openApp('app5', './images/folder-d.ico')">
+        <img src="./images/folder-d.ico" alt="App 5" />
+        <p>Sites web</p>
+      </div>
       <div class="icon" ondblclick="openApp('app1', './images/folder-i.ico')">
         <img src="./images/folder-i.ico" alt="App 1" />
-        <p>Jeux</p>
+        <p>Jeu 2D</p>
+      </div>
+      <div class="icon" ondblclick="openApp('app4', './images/folder-v.ico')">
+        <img src="./images/folder-v.ico" alt="App 4" />
+        <p>Modèles 3D</p>
       </div>
       <div class="icon" ondblclick="openApp('app2', './images/text.ico')">
         <img src="./images/text.ico" alt="App 2" />
@@ -25,20 +33,24 @@
         <img src="./images/text.ico" alt="App 3" />
         <p>Entrer en contact</p>
       </div>
-      <div class="icon" ondblclick="openApp('app4', './images/folder-v.ico')">
-        <img src="./images/folder-v.ico" alt="App 4" />
-        <p>Modèles 3D</p>
+      <div class="icon" ondblclick="openApp('app6', './images/folder-d.ico')">
+        <img src="./images/folder-d.ico" alt="App 6" />
+        <p>Web VR</p>
       </div>
-      <div class="icon" ondblclick="openApp('app5', './images/folder-d.ico')">
-        <img src="./images/folder-d.ico" alt="App 5" />
-        <p>Sites web</p>
+      <div class="icon" ondblclick="openApp('app7', './images/folder-i.ico')">
+        <img src="./images/folder-i.ico" alt="App 7" />
+        <p>Jeu VR</p>
+      </div>
+      <div class="icon" ondblclick="openApp('app8', './images/folder-i.ico')">
+        <img src="./images/folder-i.ico" alt="App 8" />
+        <p>Arduino</p>
       </div>
     </div>
 
     <!-- Popup Applications -->
     <div class="popup" id="app1">
       <div class="popup-header">
-        <span>Jeux</span>
+        <span>Jeu 2D</span>
         <div class="popup-controls">
           <button onclick="minimizeApp('app1', './images/folder-i.ico')">
             -
@@ -75,7 +87,7 @@
 
     <div class="popup" id="app2">
       <div class="popup-header">
-        <span>A propos de moi</span>
+        <span>À propos de moi</span>
         <div class="popup-controls">
           <button onclick="minimizeApp('app2', './images/text.ico')">-</button>
           <button onclick="toggleFullscreen('app2')">[ ]</button>
@@ -84,7 +96,7 @@
       </div>
       <div class="popup-content">
         <p>
-          <img src="./images/moi.jpeg" alt="moi" class="img1" />Bonjour ! Je
+          <img src="./images/moi.jpeg" alt="moi" class="img1" />Bonjour! Je
           m'appelle Emily et je suis passionnée par la programmation. J'ai
           découvert cette passion avec étonnement, car je me suis toujours
           considérée comme une personne plutôt artistique. <br /><br />
@@ -100,7 +112,7 @@
           <br />Dans mon temps libre, j'aime passer du temps sur mon ordinateur,
           promener mon chat, et m'évader de Montréal pour faire de la randonnée
           et du camping. J'espère que vous apprécierez mon site web, et à
-          bientôt peut-être !
+          bientôt peut-être!
         </p>
       </div>
     </div>
@@ -145,7 +157,7 @@
 
     <div class="popup" id="app4">
       <div class="popup-header">
-        <span>Modeles 3D</span>
+        <span>Modèles 3D</span>
         <div class="popup-controls">
           <button onclick="minimizeApp('app4', './images/folder-v.ico')">
             -
@@ -163,7 +175,7 @@
           <p>
             Modèle de véhicule inspiré d’un poisson et d’un insecte, réalisé
             dans le cadre d’un cours de modélisation 3D.<br />
-            <b>Technologie.s: </b>logiciel Maya, Substance 3D
+            <b>Technologie.s: </b>Maya, Substance 3D
           </p>
         </div>
         <div class="projet2">
@@ -174,7 +186,7 @@
           <p>
             Modèle de talisman en forme d’araignée, réalisé dans le cadre d’un
             cours de modélisation 3D.<br />
-            <b>Technologie.s: </b>logiciel Maya
+            <b>Technologie.s: </b>Maya
           </p>
         </div>
       </div>
@@ -208,7 +220,8 @@
             ajouter des commentaires, des likes et des dislikes uniquement après
             connexion, tandis que la visualisation du site est possible sans
             connexion. Le code complet est disponible sur mon GitHub. <br />
-            <b>Technologie.s:</b> React, JSX, Firebase <br />
+            <b>Technologie.s:</b> React, JSX, npm, vite, Firebase (storage,
+            firestore database, hosting, authentication) <br />
             <b>Coéquipier.es:</b> Mathieu Croteau-Dufour
           </p>
         </div>
@@ -226,11 +239,11 @@
           </div>
           <p>
             Développement d'un magasin en ligne de chandails, avec filtre par
-            catégorie et tri par prix. Le site prend en charge i18n en français
-            et en anglais. Chaque chandail ajouté au panier augmente
-            automatiquement le nombre d'articles et le prix total affichés.
+            catégorie et tri par prix. Le site est disponible en français et en
+            anglais. Chaque chandail ajouté au panier augmente automatiquement
+            le nombre d'articles et le prix total affichés.
             <br />
-            <b>Technologie.s:</b> PHP, API backend, SQL db<br />
+            <b>Technologie.s:</b> PHP, API backend, SQL db, i18n<br />
             <b>Coéquipier.es:</b> Mathieu Croteau-Dufour
           </p>
         </div>
@@ -241,11 +254,23 @@
           <div class="carousel">
             <img src="./images/tim.png" alt="" />
           </div>
+          <div class="carousel">
+            <div class="carousel-inner">
+              <img src="./images/tim4.png" alt="" class="active" />
+              <img src="./images/tim1.png" alt="" />
+              <img src="./images/tim2.png" alt="" />
+              <img src="./images/tim3.png" alt="" />
+              <img src="./images/tim.png" alt="" />
+            </div>
+            <button class="prev" onclick="prochaine(-1, this)">&#10094;</button>
+            <button class="next" onclick="prochaine(1, this)">&#10095;</button>
+          </div>
           <p>
-            Projet d'équipe en cours. J'assume le rôle de responsable de la
-            programmation, et mes contributions spécifiques sont documentées par
-            des commits dans ma branche. <br />
-            <b>Technologie.s:</b> wordpress, champs acf, PHP, JavaScript <br />
+            Projet en cours; refonte du site de la technique d'intégration
+            multimédia. J'assume le rôle de responsable de la programmation.
+            <br />
+            <b>Technologie.s:</b> Wordpress, champs acf, PHP, HTML, Sass,
+            JavaScript <br />
             <b>Coéquipier.es: </b>Eric Nguyen, David Rousseau, Olivier Poulin,
             Raymond Beauregard-Casavant
           </p>
@@ -270,6 +295,122 @@
           </p>
         </div>
       </div>
+    </div>
+
+    <div class="popup" id="app6">
+      <div class="popup-header">
+        <span>Web VR</span>
+        <div class="popup-controls">
+          <button onclick="minimizeApp('app6', './images/folder-i.ico')">
+            -
+          </button>
+          <button onclick="toggleFullscreen('app6')">[]</button>
+          <button class="ferme" onclick="closeApp('app6')">X</button>
+        </div>
+      </div>
+      <div class="popup-content">
+        <div class="projet1">
+          <a
+            href="https://www.canva.com/design/DAGXKUknQvQ/W7ZRntHw7sc80QyjbFJBNA/edit?utm_content=DAGXKUknQvQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+            >Projet de recherche</a
+          >
+          <div class="carousel">
+            <div class="carousel-inner">
+              <img src="./images/recherche1.png" alt="" class="active" />
+              <img src="./images/recherche2.png" alt="" />
+              <img src="./images/recherche3.png" alt="" />
+              <img src="./images/recherche4.png" alt="" />
+              <img src="./images/recherche5.png" alt="" />
+              <img src="./images/recherche6.png" alt="" />
+              <img src="./images/recherche7.png" alt="" />
+            </div>
+            <button class="prev" onclick="prochaine(-1, this)">&#10094;</button>
+            <button class="next" onclick="prochaine(1, this)">&#10095;</button>
+          </div>
+          <p>
+            En cours. Pour mon projet final de programme, j'ai décidé de faire
+            un site web en réalité virtuelle. J'afficherai le site dès qu'il
+            sera entamé, en janvier 2025.<br />
+            <b>Technologie.s:</b> WebXR, meta quest, <br />
+          </p>
+        </div>
+      </div>
+      <div class="resize-handle"></div>
+    </div>
+    <!-- JEU VR ----------------------------------------------------------------------------------------------------------------->
+    <div class="popup" id="app7">
+      <div class="popup-header">
+        <span>Jeu VR</span>
+        <div class="popup-controls">
+          <button onclick="minimizeApp('app7', './images/folder-i.ico')">
+            -
+          </button>
+          <button onclick="toggleFullscreen('app7')">[]</button>
+          <button class="ferme" onclick="closeApp('app7')">X</button>
+        </div>
+      </div>
+      <div class="popup-content">
+        <div class="projet1">
+          <a href="">Quest for the hole</a>
+          <div class="carousel">
+            <div class="carousel-inner">
+              <img src="./images/quest.png" alt="" class="active" />
+              <img src="./images/quest1.png" alt="" />
+              <img src="./images/quest2.png" alt="" />
+              <img src="./images/quest3.png" alt="" />
+            </div>
+            <button class="prev" onclick="prochaine(-1, this)">&#10094;</button>
+            <button class="next" onclick="prochaine(1, this)">&#10095;</button>
+          </div>
+          <p>
+            Jeu de mini-putt en réalité virtuel. Développé dans le cadre du
+            cours d'expérimentation en jeu. J'étais responsable de l'intégration
+            multimédia et de la direction artistique; level design, building,
+            lighting, skybox, sons, etc.<br />
+            <b>Technologie.s:</b> Unity, C#, Open XR, meta quest <br />
+            <b>Coéquipier.es:</b> Mathieu Croteau-Dufour
+          </p>
+        </div>
+      </div>
+      <div class="resize-handle"></div>
+    </div>
+    <!-- ARDUINO ----------------------------------------------------------------------------------------------------------------->
+    <div class="popup" id="app8">
+      <div class="popup-header">
+        <span>Arduino</span>
+        <div class="popup-controls">
+          <button onclick="minimizeApp('app8', './images/folder-i.ico')">
+            -
+          </button>
+          <button onclick="toggleFullscreen('app8')">[]</button>
+          <button class="ferme" onclick="closeApp('app8')">X</button>
+        </div>
+      </div>
+      <div class="popup-content">
+        <div class="projet1">
+          <a href="">Caméra de surveillance</a>
+          <div class="carousel">
+            <div class="carousel-inner">
+              <img src="./images/schema-dessin.jpg" alt="" class="active" />
+              <img src="./images/Media.jpg" alt="" />
+            </div>
+            <button class="prev" onclick="prochaine(-1, this)">&#10094;</button>
+            <button class="next" onclick="prochaine(1, this)">&#10095;</button>
+          </div>
+          <p>
+            Caméra de surveillance avec détection de mouvement. Le
+            micro-controlleur est connecté par Wi-Fi ce qui permet aux photos
+            d'être envoyées à la base de données. L'utilisateur peut alors
+            visionner les photos capturées en temps réel. Développé dans le
+            cadre du cours de technologies.
+            <br />
+            <b>Technologie.s:</b> C++, Firebase storage, Arduino (logiciel),
+            ESP-32 cam, PIR, FTDI<br />
+            <b>Coéquipier.es:</b> Mathieu Croteau-Dufour
+          </p>
+        </div>
+      </div>
+      <div class="resize-handle"></div>
     </div>
 
     <div id="taskbar">
