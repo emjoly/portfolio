@@ -116,16 +116,21 @@
   display: flex;
 }
 
-.carousel img {
+.slide {
   display: none;
+  width: 100%;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide img,
+.slide video {
   width: 100%;
   height: auto;
   object-fit: contain;
   aspect-ratio: 16 / 9;
-}
-
-.carousel img.active {
-  display: block;
 }
 
 .prev,

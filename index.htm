@@ -64,9 +64,15 @@
           <a href="">Vengeance et Vertu</a>
           <div class="carousel">
             <div class="carousel-inner">
-              <img src="./images/VV1.png" alt="" class="active" />
-              <img src="./images/VV2.png" alt="" />
-              <img src="./images/VV3.png" alt="" />
+              <div class="slide active">
+                <img src="./images/VV1.png" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./images/VV2.png" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./images/VV3.png" alt="" />
+              </div>
             </div>
             <button class="prev" onclick="prochaine(-1, this)">&#10094;</button>
             <button class="next" onclick="prochaine(1, this)">&#10095;</button>
@@ -98,12 +104,13 @@
         <p>
           <img src="./images/moi.jpeg" alt="moi" class="img1" />Bonjour! Je
           m'appelle Emily et je suis passionnée par la programmation. J'ai
-          découvert cette passion avec étonnement, car je me suis toujours
-          considérée comme une personne plutôt artistique. <br /><br />
+          découvert cette passion avec étonnement au cégep, car je me suis
+          toujours considérée comme une personne plutôt artistique. <br /><br />
           Cependant, la programmation me permet de m'épanouir et de m'exprimer
           de manière créative tout en travaillant mon côté logique. Je suis une
-          personne qui aborde la vie une étape à la fois et qui aime profiter
-          des petits plaisirs du quotidien et cela se transmet dans mon travail.
+          personne qui aborde la vie une étape à la fois, qui aime profiter des
+          petits plaisirs du quotidien et qui s'applique dans tout ce que je
+          fais et cela se transmet dans mon travail.
           <img
             src="./images/tupperware.jpg"
             alt="mon chat, tupperware"
@@ -208,9 +215,15 @@
           <a href="https://tp2-jse.web.app/">Bande dessinées</a>
           <div class="carousel">
             <div class="carousel-inner">
-              <img src="./images/tp2-1.png" alt="" class="active" />
-              <img src="./images/tp2-2.png" alt="" />
-              <img src="./images/tp2-4.png" alt="" />
+              <div class="slide active">
+                <img src="./images/tp2-1.png" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./images/tp2-2.png" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./images/tp2-4.png" alt="" />
+              </div>
             </div>
             <button class="prev" onclick="prochaine(-1, this)">&#10094;</button>
             <button class="next" onclick="prochaine(1, this)">&#10095;</button>
@@ -229,10 +242,18 @@
           <a href="https://tp2-jse.web.app/">Teetim</a>
           <div class="carousel">
             <div class="carousel-inner">
-              <img src="./images/react8.png" alt="" class="active" />
-              <img src="./images/react9.png" alt="" />
-              <img src="./images/React56.png" alt="" />
-              <img src="./images/React7.png" alt="" />
+              <div class="slide active">
+                <img src="./images/react8.png" alt="" class="active" />
+              </div>
+              <div class="slide">
+                <img src="./images/react9.png" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./images/React56.png" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./images/React7.png" alt="" />
+              </div>
             </div>
             <button class="prev" onclick="prochaine(-1, this)">&#10094;</button>
             <button class="next" onclick="prochaine(1, this)">&#10095;</button>
@@ -252,15 +273,14 @@
             >Technique d'intégration multimédia</a
           >
           <div class="carousel">
-            <img src="./images/tim.png" alt="" />
-          </div>
-          <div class="carousel">
             <div class="carousel-inner">
-              <img src="./images/tim4.png" alt="" class="active" />
-              <img src="./images/tim1.png" alt="" />
-              <img src="./images/tim2.png" alt="" />
-              <img src="./images/tim3.png" alt="" />
-              <img src="./images/tim.png" alt="" />
+              <div class="slide active">
+                <img src="./images/tim4.png" alt="" />
+              </div>
+              <div class="slide"><img src="./images/tim1.png" alt="" /></div>
+              <div class="slide"><img src="./images/tim2.png" alt="" /></div>
+              <div class="slide"><img src="./images/tim3.png" alt="" /></div>
+              <div class="slide"><img src="./images/tim.png" alt="" /></div>
             </div>
             <button class="prev" onclick="prochaine(-1, this)">&#10094;</button>
             <button class="next" onclick="prochaine(1, this)">&#10095;</button>
@@ -279,10 +299,12 @@
           <a href="">Aux 33 tours</a>
           <div class="carousel">
             <div class="carousel-inner">
-              <img src="./images/vynil.png" alt="" class="active" />
-              <img src="./images/xd2.png" alt="" />
-              <img src="./images/xd3.png" alt="" />
-              <img src="./images/xd4.png" alt="" />
+              <div class="slide active">
+                <img src="./images/vynil.png" alt="" />
+              </div>
+              <div class="slide"><img src="./images/xd2.png" alt="" /></div>
+              <div class="slide"><img src="./images/xd3.png" alt="" /></div>
+              <div class="slide"><img src="./images/xd4.png" alt="" /></div>
             </div>
             <button class="prev" onclick="prochaine(-1, this)">&#10094;</button>
             <button class="next" onclick="prochaine(1, this)">&#10095;</button>
@@ -310,28 +332,39 @@
       </div>
       <div class="popup-content">
         <div class="projet1">
-          <a
-            href="https://www.canva.com/design/DAGXKUknQvQ/W7ZRntHw7sc80QyjbFJBNA/edit?utm_content=DAGXKUknQvQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-            >Projet de recherche</a
-          >
+          <a href="https://emjoly.github.io/plantes/">Magasin de Plantes</a>
           <div class="carousel">
             <div class="carousel-inner">
-              <img src="./images/recherche1.png" alt="" class="active" />
-              <img src="./images/recherche2.png" alt="" />
-              <img src="./images/recherche3.png" alt="" />
-              <img src="./images/recherche4.png" alt="" />
-              <img src="./images/recherche5.png" alt="" />
-              <img src="./images/recherche6.png" alt="" />
-              <img src="./images/recherche7.png" alt="" />
+              <div class="slide active">
+                <video
+                  src="./images/plantesvr.mp4"
+                  alt=""
+                  class="active"
+                  controls
+                />
+              </div>
+              <div class="slide"><img src="./images/2en1.png" alt="" /></div>
+              <div class="slide">
+                <img src="./images/createscene.png" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./images/interactions.png" alt="" />
+              </div>
             </div>
             <button class="prev" onclick="prochaine(-1, this)">&#10094;</button>
             <button class="next" onclick="prochaine(1, this)">&#10095;</button>
           </div>
           <p>
-            En cours. Pour mon projet final de programme, j'ai décidé de faire
-            un site web en réalité virtuelle. J'afficherai le site dès qu'il
-            sera entamé, en janvier 2025.<br />
-            <b>Technologie.s:</b> WebXR, meta quest, <br />
+            Pour mon projet final de DEC, j'ai décidé de faire en 3 mois un site
+            web en réalité virtuelle d'un magasin de plantes. Le but était
+            d'offrir une expérience de magasinage en ligne réaliste. Le plus
+            grand défi était de rendre le site le plus optimisé possible afin de
+            pouvoir le visionner pas seulement en réalité virtuelle; une version
+            en WebGL l'autre en WebXR. Comme démontré dans la vidéo, j'ai trouvé
+            un émulateur de VR afin de rendre la réalisation du site plus
+            facile.
+            <br />
+            <b>Technologie.s:</b> WebXR, Three.js, meta quest, <br />
           </p>
         </div>
       </div>
@@ -354,10 +387,12 @@
           <a href="">Quest for the hole</a>
           <div class="carousel">
             <div class="carousel-inner">
-              <img src="./images/quest.png" alt="" class="active" />
-              <img src="./images/quest1.png" alt="" />
-              <img src="./images/quest2.png" alt="" />
-              <img src="./images/quest3.png" alt="" />
+              <div class="slide active">
+                <img src="./images/quest.png" alt="" />
+              </div>
+              <div class="slide"><img src="./images/quest1.png" alt="" /></div>
+              <div class="slide"><img src="./images/quest2.png" alt="" /></div>
+              <div class="slide"><img src="./images/quest3.png" alt="" /></div>
             </div>
             <button class="prev" onclick="prochaine(-1, this)">&#10094;</button>
             <button class="next" onclick="prochaine(1, this)">&#10095;</button>
@@ -391,8 +426,10 @@
           <a href="">Caméra de surveillance</a>
           <div class="carousel">
             <div class="carousel-inner">
-              <img src="./images/schema-dessin.jpg" alt="" class="active" />
-              <img src="./images/Media.jpg" alt="" />
+              <div class="slide active">
+                <img src="./images/schema-dessin.jpg" alt="" />
+              </div>
+              <div class="slide"><img src="./images/Media.jpg" alt="" /></div>
             </div>
             <button class="prev" onclick="prochaine(-1, this)">&#10094;</button>
             <button class="next" onclick="prochaine(1, this)">&#10095;</button>

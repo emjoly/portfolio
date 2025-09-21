@@ -77,22 +77,37 @@ updateTime();
 // carrousel pour projets !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 function prochaine(direction, btn) {
   const carousel = btn.parentElement.querySelector(".carousel-inner");
-  const images = carousel.querySelectorAll("img");
+  const slides = carousel.querySelectorAll(".slide");
   let currentIndex;
 
-  // trouver img active
-  images.forEach((img, index) => {
-    if (img.classList.contains("active")) {
+  // find active slide
+  slides.forEach((slide, index) => {
+    if (slide.classList.contains("active")) {
       currentIndex = index;
     }
   });
 
-  // enlever classe active
-  images[currentIndex].classList.remove("active");
+  // deactivate current
+  const currentSlide = slides[currentIndex];
+  currentSlide.classList.remove("active");
 
-  // calculer prochaine img
-  const nextIndex = (currentIndex + direction + images.length) % images.length;
+  // pause/reset if video
+  const currentVideo = currentSlide.querySelector("video");
+  if (currentVideo) {
+    currentVideo.pause();
+    currentVideo.currentTime = 0; // optional reset
+  }
 
-  // ajouter classe active
-  images[nextIndex].classList.add("active");
+  // calculate next index
+  const nextIndex = (currentIndex + direction + slides.length) % slides.length;
+
+  // activate next
+  const nextSlide = slides[nextIndex];
+  nextSlide.classList.add("active");
+
+  // play if video
+  const nextVideo = nextSlide.querySelector("video");
+  if (nextVideo) {
+    nextVideo.play();
+  }
 }
